@@ -1,0 +1,185 @@
+@import "../../sassStyles/variables.scss";
+
+.how {
+    &__container {
+        position: relative;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        gap: 64px;
+        @include adaptiveValue("gap", 64, 25, 0, 1400, 320);
+
+        @media (max-width: em(910)) {
+            flex-direction: column;
+        }
+
+        &::after {
+            content: url('../../img/dots.svg');
+            display: inline-block;
+            position: absolute;
+            bottom: -250px;
+            right: -20%;
+
+            @media (max-width: em(700)) {
+                bottom: -150px;
+            }
+
+            @media (max-width: em(1650)) {
+                right: 0;
+                transform: scale(0.8);
+            }
+
+            @media (max-width: em(450)) {
+                //bottom: -100px;
+                transform: scale(0.6);
+            }
+        }
+    }
+
+    &__title {
+        h2 {
+            @media (max-width: em(500)) {
+                font-size: 50px;
+            }
+
+            @media (max-width: em(400)) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    &__left {
+        @media (min-width: em(910)) {
+            flex: 0 1 506px;
+        }
+    }
+
+    &__links {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+
+        @media (max-width: em(500)) {
+            flex-direction: column;
+        }
+    }
+
+    &__btn1 {
+        color: #FFFFFF;
+        background-color: #313131;
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+        border-radius: 5px;
+        transition: background-color .2s ease-in;
+
+        &:hover {
+            background-color: #252525;
+        }
+
+        @media (max-width: em(500)) {
+            width: 100%;
+        }
+    }
+
+    &__btn2 {
+        color: #313131;
+        border: 1px solid #313131;
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+        border-radius: 5px;
+        transition: all .2s ease-in;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: #252525;
+        }
+
+        @media (max-width: em(500)) {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        width: 100%;
+        flex: 0 1 auto;
+
+        @media (min-width: em(910)) {
+            border-left: 1px solid #E0E0E0;
+            padding-left: 40px;
+            @include adaptiveValue("padding-left", 40, 10, 0, 1200, 910)
+        }
+    }
+}
+
+.accordion {
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+    opacity: 0.88;
+    border-radius: 10px;
+    padding: 0px 30px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        width: 100%;
+        height: 100px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: #313131;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    &__plus {
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            background: #313131;
+            border-radius: 20px;
+
+            &:first-child {
+                top: 9px;
+                width: 100%;
+                height: 2px;
+            }
+
+            &:last-child {
+                height: 100%;
+                width: 2px;
+                left: 9px;
+                transition: transform .4s ease;
+
+                .active & {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    &__content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #5F5F5F;
+        max-width: 420px;
+        padding-bottom: 49px;
+
+        @media (max-width: em(380)) {
+            font-size: 16px;
+        }
+    }
+}

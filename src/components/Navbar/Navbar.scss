@@ -1,0 +1,206 @@
+@import "../../sassStyles/variables.scss";
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #313131;
+        width: 100%;
+        z-index: 101;
+    }
+
+    &__container {
+        min-height: 112px;
+        max-width: 1338px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        transition: min-height .2s ease-in;
+
+        .scroll-nav & {
+            min-height: 80px;
+        }
+    }
+
+    &__logo {
+        cursor: pointer;
+        flex: 1 1 auto;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: -0.06em;
+        color: #313131;
+
+        @media (max-width: 776px) {
+            margin-right: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+
+        @media (max-width: 800px) {
+            gap: 40px;
+        }
+
+        @media (max-width: 767px) {
+            position: fixed;
+            background-color: rgb(49, 49, 49);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            padding: 90px 0px 0px 90px;
+            flex-direction: column;
+            overflow: auto;
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+        font-weight: 450;
+        font-size: rem(17);
+        line-height: calc(22 / 17);
+        color: #313131;
+        transition: color .2s ease-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: rgba(255, 229, 0);
+            }
+        }
+
+        @media (max-width: 767px) {
+            color: #FFFFFF;
+            font-size: rem(24);
+        }
+    }
+}
+
+.authorization {
+    display: flex;
+    gap: 31px;
+
+    &__in {
+        font-weight: 450;
+        font-size: rem(17);
+        line-height: calc(22 / 17);
+        color: #313131;
+        align-self: center;
+
+        transition: color .2s ease-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: rgba(255, 229, 0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &__up {
+        font-weight: 450;
+        font-size: rem(17);
+        line-height: calc(22 / 17);
+        color: #FFFFFF;
+        background-color: #313131;
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+        border-radius: 5px;
+        width: 152px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color .2s ease-out;
+
+        &:hover {
+            background-color: #1e1d1d;
+        }
+
+        @media (max-width: 480px) {
+            width: 132px;
+            height: 52px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        gap: 10px;
+    }
+
+    @media (min-width: 991px) {
+        margin-left: 120px;
+    }
+}
+
+.burger {
+    display: none;
+
+    @media (max-width: 767px) {
+        position: relative;
+        z-index: 5;
+        margin-left: 20px;
+        display: block;
+        width: 35px;
+        height: 27px;
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #313131;
+            transition: all .3s ease-in;
+
+            &:first-child {
+                top: 0;
+            }
+
+            &:last-child {
+                bottom: 0;
+            }
+
+            &:nth-child(2) {
+                top: 13px;
+            }
+        }
+
+        &.active {
+            span {
+                background-color: #FFFFFF;
+
+                &:first-child {
+                    top: 13px;
+                    transform: rotate(-45deg);
+                }
+
+                &:last-child {
+                    top: 13px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.scroll-nav {
+    background: rgba(255, 230, 100, 0.9);
+}

@@ -1,0 +1,111 @@
+@import "../../sassStyles/variables.scss";
+
+.blog {
+    margin-bottom: 140xp;
+    @include adaptiveValue("margin-bottom", 140, 80, 0, 1300, 600);
+    @include adaptiveValue("margin-top", 140, 80, 0, 1300, 600);
+
+    &__container {
+        max-width: 1130px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 400;
+        line-height: calc(82 / 65);
+        color: #313131;
+        max-width: 660px;
+        @include adaptiveValue("font-size", 65, 30, 0, 1200, 500);
+        @include adaptiveValue("margin-bottom", 90, 45, 0, 1400, 320);
+    }
+
+    &__row {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+
+        @media (max-width:$mobile) {
+            grid-template: auto / auto
+        }
+
+        gap: 24px;
+    }
+}
+
+.item {
+    padding: 30px 0px;
+
+    &__body {
+        position: relative;
+        padding: 0px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: em(600)) {
+            padding: 0px 20px;
+        }
+    }
+
+    img {
+        position: relative;
+        top: -30px;
+        max-width: 100%;
+        width: 100%;
+        height: 214px;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-top: 58px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+        color: #313131;
+        opacity: 0.88;
+        flex: 1 1 auto;
+
+        @media (max-width:$mobile) {
+            margin-top: 0px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        bottom: -30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #5F5F5F;
+        background: #EEF7FB;
+        backdrop-filter: blur(50px);
+        padding: 30px 26px 45px 26px;
+    }
+}
+
+.labels-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (min-width:$mobile) {
+        position: absolute;
+        top: 211px;
+        left: 40px;
+    }
+
+
+    &__new {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        color: #FF5F5F;
+
+        @media (max-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    }
+}

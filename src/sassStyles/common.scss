@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.title {
+    &__header {
+        font-weight: 400;
+        font-size: rem(65);
+        line-height: calc(85 / 65);
+        color: #313131;
+
+        @media (max-width: em(420)) {
+            font-size: rem(50);
+        }
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: calc(25 / 20);
+        color: #313131;
+        max-width: 491px;
+
+        @media (max-width: em(420)) {
+            margin-top: 10px;
+        }
+    }
+}
+
+.button {
+    width: 197px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

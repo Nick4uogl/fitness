@@ -1,0 +1,90 @@
+@import "../../sassStyles/variables.scss";
+
+.partners {
+    margin-top: 162px;
+    margin-bottom: 118px;
+
+    @media (max-width: em(700)) {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    &__container {
+        position: relative;
+        max-width: 1150px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        gap: 87px;
+
+        @media (max-width: em(1100)) {
+            flex-direction: column;
+        }
+
+        &::after {
+            content: url('../../img/dots.svg');
+            display: inline-block;
+            position: absolute;
+            bottom: -40px;
+            left: -15%;
+
+            @media (max-width: em(850)) {
+                bottom: -50px;
+            }
+
+            @media (max-width: em(1300)) {
+                left: 0;
+                transform: scale(0.8);
+            }
+
+            @media (max-width: em(450)) {
+                bottom: -100px;
+                transform: scale(0.6);
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+
+        @media (max-width: em(1100)) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.logoes {
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+    gap: 40px;
+
+    @media (max-width: em(600)) {
+        grid-template: 1fr / 1fr;
+        justify-items: center;
+    }
+
+    @media (max-width: em(1100)) {
+        justify-content: center;
+    }
+
+    &__item {
+        width: 261px;
+        height: 108px;
+        background-color: #fff;
+        box-shadow: 0px 20px 50px rgba(49, 49, 49, 0.05);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+            @media (min-width: em(600)) {
+                grid-column-start: 2;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

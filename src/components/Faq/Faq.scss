@@ -1,0 +1,74 @@
+@import "../../sassStyles/variables.scss";
+
+.faq {
+    &__text {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: rem(65);
+        line-height: calc(86 / 65);
+        color: #313131;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: calc(25 / 20);
+        text-align: center;
+        color: #5F5F5F;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+.faqs {
+    background-color: rgba(255, 229, 0, 0.1);
+    border-radius: 0px;
+    @include adaptiveValue("padding-top", 90, 60, 0, 1200, 500);
+    @include adaptiveValue("padding-bottom", 90, 60, 0, 1200, 500);
+
+    &__container {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        display: grid;
+        gap: 30px;
+
+        @media (min-width: em(500)) {
+            grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        }
+    }
+
+    &__card {
+        padding: 24px 43px 34px 30px;
+        background: #FFFFFF;
+        border: 1px solid #F8F9FC;
+        box-shadow: 0px 20px 40px rgba(141, 147, 201, 0.08);
+        border-radius: 10px;
+    }
+
+    &__question {
+        font-weight: 700;
+        font-size: rem(18);
+        line-height: 130%;
+        color: #313131;
+        opacity: 0.88;
+    }
+
+    &__answer {
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: calc(23 / 18);
+        color: #5F5F5F;
+        margin-top: 35px;
+
+        @media (max-width: em(700)) {
+            margin-top: 20px;
+        }
+    }
+}
