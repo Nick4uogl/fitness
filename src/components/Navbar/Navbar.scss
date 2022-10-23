@@ -136,6 +136,11 @@
             width: 132px;
             height: 52px;
         }
+
+        @media (max-width: em(320)) {
+            width: 100px;
+            height: 47px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -155,8 +160,12 @@
         z-index: 5;
         margin-left: 20px;
         display: block;
-        width: 35px;
+        flex: 0 0 35px;
         height: 27px;
+
+        @media (max-width: em(320)) {
+            margin-left: 5px;
+        }
 
         span {
             position: absolute;

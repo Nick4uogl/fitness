@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Partners.scss"
 import { motion } from 'framer-motion'
-import partner1 from "../../img/partner1.png"
-import partner2 from "../../img/partner2.png"
-import partner3 from "../../img/partner3.png"
-import partner4 from "../../img/partner4.png"
-import partner5 from "../../img/partner5.png"
+import partner1 from "../../img/partners/partner1.png"
+import partner2 from "../../img/partners/partner2.png"
+import partner3 from "../../img/partners/partner3.png"
+import partner4 from "../../img/partners/partner4.png"
+import partner5 from "../../img/partners/partner5.png"
 
 const titleVariants = {
     offscreen: {

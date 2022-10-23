@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./About.scss"
 import { motion } from 'framer-motion'
-import girl2 from "../../img/girl2.png"
-import girl3 from "../../img/girl3.png"
+import girl2 from "../../img/about/girl2.webp"
+import girl3 from "../../img/about/girl3.webp"
 
 const variants = {
     offscreen: (i) => {

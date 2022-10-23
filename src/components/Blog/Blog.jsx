@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import "./Blog.scss"
-import blog1 from "../../img/blog1.jpg"
-import blog2 from "../../img/blog2.jpg"
+import blog1 from "../../img/blog/blog1.webp"
+import blog2 from "../../img/blog/blog2.webp"
 
 const titleVariants = {
     offscreen: {

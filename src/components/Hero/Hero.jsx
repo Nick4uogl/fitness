@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import "./Hero.scss"
-import girl from '../../img/girl.png'
+import girl from '../../img/girl.webp'
 
 function Hero() {
     const [email, setEmail] = useState('')

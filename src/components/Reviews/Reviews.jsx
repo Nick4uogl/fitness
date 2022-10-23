@@ -6,27 +6,11 @@ import { useMediaQuery } from 'react-responsive'
 import 'swiper/css'
 import "swiper/css/pagination"
 import "./Reviews.scss"
-import boy from "../../img/boy.png"
+import boy from "../../img/boy.webp"
 
 const leftVariants = {
     offscreen: {
         x: -80,
-        opacity: 0
-    },
-    onscreen: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 1
-        }
-    }
-}
-
-const boyVariants = {
-    offscreen: {
-        x: 80,
         opacity: 0
     },
     onscreen: {
