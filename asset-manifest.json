@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.13022669.css",
-    "main.js": "/fitness/static/js/main.79f40aef.js",
+    "main.css": "/fitness/static/css/main.d8a57c1a.css",
+    "main.js": "/fitness/static/js/main.37b342a9.js",
     "static/media/girl3.webp": "/fitness/static/media/girl3.137960fb7f7999375346.webp",
     "static/media/girl2.webp": "/fitness/static/media/girl2.e414d0f6ea96924026a7.webp",
     "static/media/girl.webp": "/fitness/static/media/girl.ed6445a77683dcb92e75.webp",
@@ -20,11 +20,11 @@
     "static/media/CircularStd-Book.woff2": "/fitness/static/media/CircularStd-Book.da91211bb1fd4f1d09d8.woff2",
     "static/media/dots.svg": "/fitness/static/media/dots.686db7b8547bf5ecd606.svg",
     "index.html": "/fitness/index.html",
-    "main.13022669.css.map": "/fitness/static/css/main.13022669.css.map",
-    "main.79f40aef.js.map": "/fitness/static/js/main.79f40aef.js.map"
+    "main.d8a57c1a.css.map": "/fitness/static/css/main.d8a57c1a.css.map",
+    "main.37b342a9.js.map": "/fitness/static/js/main.37b342a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.13022669.css",
-    "static/js/main.79f40aef.js"
+    "static/css/main.d8a57c1a.css",
+    "static/js/main.37b342a9.js"
   ]
 }
