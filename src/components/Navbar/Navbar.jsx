@@ -55,8 +55,8 @@ function Navbar() {
             <div className="nav__container">
                 <Link to='/' onClick={toggleHome} className="nav__logo">Fitness</Link>
                 <motion.ul className={`nav__list ${toggle ? "active" : ""}`}
-                    variants={sidebar}
-                    initial={false}
+                    variants={isBurger ? sidebar : {}}
+                    //initial={false}
                     animate={isBurger ? (toggle ? "open" : "closed") : {}}
                 >
                     <motion.li

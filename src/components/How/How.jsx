@@ -44,7 +44,7 @@ function How() {
                 <div className="how__right">
                     <AccordionContent
                         title="Create Account on Fitness.co"
-                        content="Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common."
+                        content="Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common.Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common."
                     />
                     <AccordionContent
                         title="View Daily Task Tutorials"

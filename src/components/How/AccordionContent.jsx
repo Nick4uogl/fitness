@@ -33,7 +33,7 @@ function AccordionContent({ title, content }) {
             variants={accordionVariants}
             initial="offscreen"
             whileInView="onscreen"
-            animate={toggle ? { maxHeight: "200px" } : { maxHeight: "100px" }}
+            animate={toggle ? { maxHeight: "800px" } : { maxHeight: "100px" }}
             transition={{ duration: 0.3 }}
         >
             <div className="accordion__header">

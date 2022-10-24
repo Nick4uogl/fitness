@@ -1,22 +1,27 @@
 @import "../../sassStyles/variables.scss";
 
 .reviews {
+    overflow: hidden;
     @include adaptiveValue("padding-top", 140, 60, 0, 1200, 500);
     @include adaptiveValue("padding-bottom", 140, 60, 0, 1200, 500);
 
     &__container {
         max-width: 1085px;
-        padding: 0px 30px;
+        padding: 0px 15px;
         margin: 0 auto;
     }
 
     &__row {
-        display: flex;
-        gap: 70px;
+        display: grid;
+        grid-auto-flow: column;
+        @include adaptiveValue("gap", 50, 30, 0, 1000, 750);
+
+        @media (min-width: em(750)) {
+            grid-template-columns: 50% 50%;
+        }
 
         @media (max-width: em(750)) {
-            flex-direction: column;
-            gap: 30px;
+            grid-auto-flow: row;
         }
     }
 
@@ -40,12 +45,6 @@
         }
     }
 
-    &__right {
-        @media (min-width:em(750)) {
-            flex: 0 1 468px;
-        }
-    }
-
     &__img {
         position: relative;
 
@@ -63,16 +62,21 @@
         &::after {
             content: '';
             position: absolute;
-            width: 100%;
             height: 82%;
-            left: 0px;
+            left: 0;
             bottom: 0;
             background: #FFE500;
             opacity: 0.1;
             border-radius: 234px 234px 0px 0px;
+            max-width: 100%;
+            @include adaptiveValue("width", 468, 270, 0, 1200, 750);
+
+            @media (min-width:em(750)) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
             @media (max-width: em(750)) {
-                max-width: 280px;
                 left: -10px;
             }
         }
@@ -82,33 +86,15 @@
         display: flex;
         flex-direction: column;
         min-width: 0;
-
-        @media (min-width:$mobile) {
-            align-self: center;
-        }
-
-        @media (min-width: $mobile) {
-            max-width: 400px;
-        }
-
-        @media (min-width: em(950)) {
-            max-width: 508px;
-        }
+        align-self: end;
     }
 
     &__slider {
         margin: 0;
-
-        @media (max-width:$mobile) {
-            max-width: 700px;
-        }
-
     }
 }
 
 .review {
-
-
     &__title {
         font-weight: 700;
         font-size: rem(34);
@@ -123,11 +109,7 @@
         font-size: rem(18);
         line-height: calc(28 / 18);
         color: #5F5F5F;
-        margin-bottom: 60px;
-
-        @media (max-width: em(900)) {
-            margin-bottom: 20px;
-        }
+        @include adaptiveValue("margin-bottom", 60, 20, 0, 1200, 900);
     }
 
     &__author {
@@ -138,16 +120,13 @@
         opacity: 0.88;
         margin-top: 40px;
         margin-bottom: 5px;
-
-        @media (max-width: em(900)) {
-            margin-top: 20px;
-        }
+        @include adaptiveValue("margin-top", 40, 20, 0, 1200, 900);
     }
 
     &__position-author {
         font-weight: 400;
         font-size: rem(18);
-        line-height: 23px;
+        line-height: calc(23 / 18);
         color: #B8B8B8;
     }
 }

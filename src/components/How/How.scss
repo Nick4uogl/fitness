@@ -8,7 +8,7 @@
         padding: 0 15px;
         display: flex;
         gap: 64px;
-        @include adaptiveValue("gap", 64, 25, 0, 1400, 320);
+        @include adaptiveValue("gap", 64, 20, 0, 1400, 900);
 
         @media (max-width: em(910)) {
             flex-direction: column;
@@ -31,7 +31,6 @@
             }
 
             @media (max-width: em(450)) {
-                //bottom: -100px;
                 transform: scale(0.6);
             }
         }
@@ -99,13 +98,13 @@
     }
 
     &__right {
-        width: 100%;
-        flex: 0 1 auto;
+        // width: 100%;
+        // flex: 0 1 auto;
 
         @media (min-width: em(910)) {
             border-left: 1px solid #E0E0E0;
             padding-left: 40px;
-            @include adaptiveValue("padding-left", 40, 10, 0, 1200, 910)
+            @include adaptiveValue("padding-left", 40, 20, 0, 1200, 910)
         }
     }
 }
@@ -132,6 +131,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 10px;
 
         span {
             cursor: pointer;
@@ -140,7 +140,7 @@
 
     &__plus {
         position: relative;
-        width: 20px;
+        flex: 0 0 20px;
         height: 20px;
 
         span {

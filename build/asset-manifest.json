@@ -1,20 +1,30 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.d4170c27.css",
-    "main.js": "/fitness/static/js/main.b5efdefc.js",
-    "static/media/girl3.png": "/fitness/static/media/girl3.b42b0207780d7e9e31d0.png",
-    "static/media/girl2.png": "/fitness/static/media/girl2.7d6f3aee588ccdd9d871.png",
-    "static/media/girl.png": "/fitness/static/media/girl.83d141a834ecb30c7436.png",
-    "static/media/boy.png": "/fitness/static/media/boy.c3c0ecc67b718757ab36.png",
-    "static/media/blog2.jpg": "/fitness/static/media/blog2.1d4da146a7285f7b01d0.jpg",
-    "static/media/blog1.jpg": "/fitness/static/media/blog1.2f189337e56f9ec6d8e8.jpg",
+    "main.css": "/fitness/static/css/main.13022669.css",
+    "main.js": "/fitness/static/js/main.79f40aef.js",
+    "static/media/girl3.webp": "/fitness/static/media/girl3.137960fb7f7999375346.webp",
+    "static/media/girl2.webp": "/fitness/static/media/girl2.e414d0f6ea96924026a7.webp",
+    "static/media/girl.webp": "/fitness/static/media/girl.ed6445a77683dcb92e75.webp",
+    "static/media/blog2.webp": "/fitness/static/media/blog2.aeea5320b88de3d210e8.webp",
+    "static/media/boy.webp": "/fitness/static/media/boy.de557436b1058708892a.webp",
+    "static/media/blog1.webp": "/fitness/static/media/blog1.0564159aedeee56c54d5.webp",
+    "static/media/CircularStd-Bold.woff": "/fitness/static/media/CircularStd-Bold.4bae1919c290b4010366.woff",
+    "static/media/CircularStd-Black.woff": "/fitness/static/media/CircularStd-Black.4a2c5eeb3ab64924ab01.woff",
+    "static/media/CircularStd-Medium.woff": "/fitness/static/media/CircularStd-Medium.e39d4081b339f42a2a55.woff",
+    "static/media/CircularStd-BookItalic.woff": "/fitness/static/media/CircularStd-BookItalic.cf3114ce9a673073b03b.woff",
+    "static/media/CircularStd-Book.woff": "/fitness/static/media/CircularStd-Book.b9b1abe339ba6639afff.woff",
+    "static/media/CircularStd-Bold.woff2": "/fitness/static/media/CircularStd-Bold.0b58ca4241eda42cff1f.woff2",
+    "static/media/CircularStd-Black.woff2": "/fitness/static/media/CircularStd-Black.00cb4881193e9281e57a.woff2",
+    "static/media/CircularStd-Medium.woff2": "/fitness/static/media/CircularStd-Medium.06dce1b52a24a6dfe3a2.woff2",
+    "static/media/CircularStd-BookItalic.woff2": "/fitness/static/media/CircularStd-BookItalic.7f0cc93da168bcfba041.woff2",
+    "static/media/CircularStd-Book.woff2": "/fitness/static/media/CircularStd-Book.da91211bb1fd4f1d09d8.woff2",
     "static/media/dots.svg": "/fitness/static/media/dots.686db7b8547bf5ecd606.svg",
     "index.html": "/fitness/index.html",
-    "main.d4170c27.css.map": "/fitness/static/css/main.d4170c27.css.map",
-    "main.b5efdefc.js.map": "/fitness/static/js/main.b5efdefc.js.map"
+    "main.13022669.css.map": "/fitness/static/css/main.13022669.css.map",
+    "main.79f40aef.js.map": "/fitness/static/js/main.79f40aef.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4170c27.css",
-    "static/js/main.b5efdefc.js"
+    "static/css/main.13022669.css",
+    "static/js/main.79f40aef.js"
   ]
 }

@@ -1,16 +1,8 @@
 @import "../../sassStyles/variables.scss";
 
 .hero {
-    padding-top: 77px;
     overflow: hidden;
-
-    @media (max-width: 1200px) {
-        padding-top: 85px;
-    }
-
-    @media (max-width: 600px) {
-        padding-top: 60px;
-    }
+    @include adaptiveValue("padding-top", 85, 60, 0, 1200, 600);
 
     &__container {
         max-width: 1150px;
@@ -105,17 +97,17 @@
 
     &__label {
         font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: rem(20);
+        line-height: calc(25 / 20);
         color: #313131;
         margin-top: 18px;
     }
 
     &__description {
         font-weight: 400;
-        font-size: 20px;
+        font-size: rem(20);
+        line-height: calc(25 / 20);
         margin-bottom: 24px;
-        line-height: 25px;
         color: #313131;
         margin-top: 34px;
     }
@@ -136,8 +128,8 @@
 
         &::placeholder {
             font-weight: 400;
-            font-size: 17px;
-            line-height: 22px;
+            font-size: rem(17);
+            line-height: calc(22 / 17);
             color: #000000;
             opacity: 0.2;
         }
@@ -166,8 +158,8 @@
         box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
         flex: 0 0 197px;
         border-radius: 0px 5px 5px 0px;
-        font-size: 17px;
-        line-height: 22px;
+        font-size: rem(17);
+        line-height: calc(22 / 17);
         color: #FFFFFF;
 
         transition: background-color .2s ease-out;

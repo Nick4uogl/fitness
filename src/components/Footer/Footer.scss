@@ -3,6 +3,7 @@
 .footer {
     @include adaptiveValue("padding-top", 175, 75, 0, 1200, 600);
     background-color: #313131;
+    overflow: hidden;
 
     &__container {
         max-width: 1110px;
